@@ -1,3 +1,7 @@
+/*
+Note: This file is just test file to check if function is working properly.
+*/
+
 #include <stdlib.h>
 #include <stdio.h>
 
