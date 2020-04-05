@@ -23,6 +23,6 @@ file(GLOB_RECURSE mouse_srcs "src/*.c" "app/*.c")
 include_directories("src/")
 include_directories("app/")
 
-set(sources ${mouse_hdrs} ${mouse_src})
+set(sources ${mouse_hdrs} ${mouse_srcs})
 
 add_executable(mouse ${sources})
