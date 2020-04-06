@@ -28,6 +28,10 @@
 *.so.*
 *.dylib
 
+# project binaries
+build/
+bin/
+
 # Executables
 *.exe
 *.out
