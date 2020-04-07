@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.5)
 
 project("MouseEditor" C)
 
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY $(CMAKE_SOURCE_DIR)/lib)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY $(CMAKE_SOURCE_DIR)/lib)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY $(CMAKE_SOURCE_DIR)/bin)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
 message(${CMAKE_C_COMPILER_ID})
 
@@ -23,6 +23,4 @@ file(GLOB_RECURSE mouse_srcs "src/*.c" "app/*.c")
 include_directories("src/")
 include_directories("app/")
 
-set(sources ${mouse_hdrs} ${mouse_srcs})
-
-add_executable(mouse ${sources})
+add_executable(mouse ${mosue_hdrs} ${mouse_srcs})
