@@ -1,14 +1,12 @@
+#include "file.h"
+
 void logFile(FILE* filePtr, char ch)
+        
 {
     while((ch = fgetc(filePtr)) != EOF)
     {   
         printf("%c", ch);
     }
-}
-
-void intro()
-{
-    printf("Welcome To MouseEditor Where the magic happens without using a mouse.");
 }
 
 void ReadFile(int argumentC,char *argumentV[])
@@ -17,7 +15,7 @@ void ReadFile(int argumentC,char *argumentV[])
     
     if (argumentC < 2)
     {
-        intro();
+  
     }
     else{
     FILE* readFilePtr;
