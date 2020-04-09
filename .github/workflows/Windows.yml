@@ -9,8 +9,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Build Debug.
+    - name: Build Debug Application For Windows.
       run: build.bat
 
-    - name: Build Release.
+    - name: Build Release Application For Windows.
       run: buildRelease.bat
