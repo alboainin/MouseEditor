@@ -1,6 +1,5 @@
-dir
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Debug ..
-devenv bin/mouse.sln /Build
+msbuild build/MouseEditor.sln ..
 cd ..
