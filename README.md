@@ -28,7 +28,7 @@ $ ./buildRelease.sh
 * [CMake](https://cmake.org) - Build System
 
 # Contributing:
-Please follow [this code convention](https://www.doc.ic.ac.uk/lab/cplus/cstyle.html) any code that fails to comply will not be accepted.
+Please follow [this code convention](https://www.doc.ic.ac.uk/lab/cplus/cstyle.html) any code that fails to comply will not be accepted (although your code may be updated from the owners so that it applies to standard).
 We accept all kinds of contributions, feel free to discuss your idea with the owners.
 
 # Authors:
