@@ -9,12 +9,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v2
 
     - name: Build Debug
       run: ./build.sh
-      
+
     - name: Build Release
       run: ./buildRelease.sh
