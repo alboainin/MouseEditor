@@ -1,5 +1,5 @@
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Debug ..
-make -j9
+msbuild bin/mouse.sln /Build
 cd ..
