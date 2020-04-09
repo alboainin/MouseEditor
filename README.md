@@ -1,6 +1,6 @@
 # MouseEditor
 An open-source editor. Mouse not included!
-The idea is to have an editor that has the customizability of EMACS, and the speed of VIM.
+The idea is to have an editor that has the customizability of EMACS, and the speed of Vim.
 
 # Getting Started
 
