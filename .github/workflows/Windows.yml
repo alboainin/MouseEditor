@@ -13,12 +13,12 @@ jobs:
       run: |
         cmake -DCMAKE_BUILD_TYPE=Debug .
         dir
-        devenv MouseEditor.sln /Build
+        msbuild MouseEditor.sln /Build
         dir
 
     - name: Build Release Application For Windows.
       run: |
         cmake -DCMAKE_BUILD_TYPE=Release .
         dir
-        devenv MouseEditor.sln /Build
+        msbuild MouseEditor.sln /Build
         dir
