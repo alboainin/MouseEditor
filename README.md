@@ -29,7 +29,7 @@ $ ./buildRelease.sh
 
 # Contributing:
 Please follow [this code convention](https://www.doc.ic.ac.uk/lab/cplus/cstyle.html) any code that fails to comply will not be accepted.
-We accept all kinds of contributions, feel free to discuss your idea with he owners :).
+We accept all kinds of contributions, feel free to discuss your idea with the owners.
 
 # Authors:
 * **AliAboainin96** - *Owner* - [Ali](https://github.com/AliAlboainin96)
