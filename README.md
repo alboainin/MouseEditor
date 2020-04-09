@@ -32,8 +32,9 @@ Please follow [this code convention](https://www.doc.ic.ac.uk/lab/cplus/cstyle.h
 We accept all kinds of contributions, feel free to discuss your idea with he owners :).
 
 # Authors:
-* **AliAboai96nin** - *Owner* - [Ali](https://github.com/AliAlboainin96)
+* **AliAboainin96** - *Owner* - [Ali](https://github.com/AliAlboainin96)
 * **altffour** - *Co-Owner* - [realaltffour](https://github.com/realaltffour)
+See also the list of [contributors](https://github.com/AliAlboainin96/MouseEditor/graphs/contributors) who participated in this project.
 
 # License:
 This project licensed under GPL v3.0 - see the [LICENSE](LICENSE) file for details
