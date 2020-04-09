@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[])
 {
-	struct global_state *state = malloc(sizeof(struct global_state));
+	struct app_state *state = malloc(sizeof(struct global_state));
 	state->argc = argc;
 	state->argv = argv;
 
