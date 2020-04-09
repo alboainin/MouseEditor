@@ -1,0 +1,47 @@
+name: App CI
+
+on: push
+
+jobs:
+  build-macOS:
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build Debug Application for macOS
+      run: ./build.sh
+
+    - name: Build Release Application for macOS
+      run: ./buildRelease.sh
+      
+  build-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build Debug Application for linux
+      run: ./build.sh
+
+    - name: Build Release Application for linux
+      run: ./buildRelease.sh
+  
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      
+    - name: Setup MSBuild.exe
+      uses: warrenbuckley/Setup-MSBuild@v1
+
+    - name: Build Debug Application For Windows.
+      run: |
+        cmake -DCMAKE_BUILD_TYPE=Debug .
+        msbuild MouseEditor.sln
+
+    - name: Build Release Application For Windows.
+      run: |
+        cmake -DCMAKE_BUILD_TYPE=Release .
+        msbuild MouseEditor.sln
