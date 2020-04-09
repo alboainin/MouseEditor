@@ -8,6 +8,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      
+    - name: Setup MSBuild.exe
+      uses: warrenbuckley/Setup-MSBuild@v1
 
     - name: Build Debug Application For Windows.
       run: |
