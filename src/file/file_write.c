@@ -1,6 +1,6 @@
 #include "file.h"
 
-int GetFileSize(struct app_state *state)
+int get_file_size(struct app_state *state)
 {
     FILE* GfilePtr;
     char charecter_count;
@@ -21,7 +21,7 @@ int GetFileSize(struct app_state *state)
     return count;
 }
 
-void WriteFile(struct app_state *state){
+void write_file(struct app_state *state){
 
     char* input;
     int limit = 0;
