@@ -1,6 +1,6 @@
 #include "file.h"
 
-void logFile(FILE* filePtr, char ch)
+void log_file(FILE* filePtr, char ch)
         
 {
     while((ch = fgetc(filePtr)) != EOF)
@@ -9,7 +9,7 @@ void logFile(FILE* filePtr, char ch)
     }
 }
 
-void ReadFile(struct app_state *state)
+void read_file(struct app_state *state)
 {
     char charecters;
     
@@ -24,11 +24,11 @@ void ReadFile(struct app_state *state)
         FILE* writeFilePtr;
         writeFilePtr = fopen(state->argv[1],"w");
         
-        logFile(writeFilePtr, charecters);
+        log_file(writeFilePtr, charecters);
         fclose(writeFilePtr);
     }
 
-    logFile(readFilePtr, charecters);
+    log_file(readFilePtr, charecters);
 
     fclose(readFilePtr);
     }
