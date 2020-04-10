@@ -2,7 +2,7 @@
 #define _LOG_ERROR_
 
 #include <string.h>
-#include <stdlib.>
+#include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
 
