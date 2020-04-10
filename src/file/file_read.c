@@ -9,22 +9,20 @@ void logFile(FILE* filePtr, char ch)
     }
 }
 
-void ReadFile(int argumentC,char *argumentV[])
+void ReadFile(struct app_state *state)
 {
     char charecters;
     
-    if (argumentC < 2)
-    {
+    if (state->argc < 2){
   
     }
     else{
     FILE* readFilePtr;
-    readFilePtr = fopen(argumentV[1],"r");
+    readFilePtr = fopen(state->argv[1],"r");
 
-    if (readFilePtr == NULL)
-    {
+    if (readFilePtr == NULL){
         FILE* writeFilePtr;
-        writeFilePtr = fopen(argumentV[1],"w");
+        writeFilePtr = fopen(state->argv[1],"w");
         
         logFile(writeFilePtr, charecters);
         fclose(writeFilePtr);
