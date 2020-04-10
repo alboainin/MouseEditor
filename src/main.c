@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 #include "state.h"
+#include "file/file.h"
 
 int main(int argc, char *argv[])
 {
@@ -8,6 +10,7 @@ int main(int argc, char *argv[])
 	state->argc = argc;
 	state->argv = argv;
 
-	printf("Hello, World!\nArgument count: %i", state->argc);
-	return 0;
+	/*printf("Hello, World!\nArgument count: %i", state->argc);*/
+	write_file(state);
+	read_file(state);
 }
