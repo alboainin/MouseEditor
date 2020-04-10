@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     
 
 	//printf("Hello, World!\nArgument count: %i", state->argc);
-    	write_file(state);
-    	read_file(state);
+    write_file(state);
+    read_file(state);
 
 }
