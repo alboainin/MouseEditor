@@ -7,8 +7,8 @@
 #include "state.h"
 
 
-int GetFileSize(struct app_state *state);
-void WriteFile(struct app_state *state);
-void ReadFile(struct app_state *state);
-void LogFile(FILE* filePtr, char ch);
+int get_file_size(struct app_state *state);
+void write_file(struct app_state *state);
+void read_file(struct app_state *state);
+void log_file(FILE* filePtr, char ch);
 #endif
