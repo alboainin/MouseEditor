@@ -14,6 +14,12 @@ int main(int argc, char *argv[])
 	/*printf("Hello, World!\nArgument count: %i", state->argc);*/
 	//write_file(state);
 	//read_file(state);
-    log_init(60);
+	
+	/* Log_init function is taking the seconds to log but in the future it will be modified to take the time from the start of the
+	   till the terminating
+	   
+	*/
+	
+    	log_init(60);
 	return 0;
     }
