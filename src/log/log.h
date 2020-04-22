@@ -5,10 +5,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <time.h>
 
 #include "state.h"
-#include "file.h"
-
-
-
+#include "../file/file.h"
+void generate_time();
+void delay(int num_sec);
+void log_init(int user_time);
 #endif

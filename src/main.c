@@ -3,6 +3,7 @@
 
 #include "state.h"
 #include "file/file.h"
+#include "log/log.h"
 
 int main(int argc, char *argv[])
 {
@@ -11,6 +12,8 @@ int main(int argc, char *argv[])
 	state->argv = argv;
 
 	/*printf("Hello, World!\nArgument count: %i", state->argc);*/
-	write_file(state);
-	read_file(state);
-}
+	//write_file(state);
+	//read_file(state);
+    log_init(60);
+	return 0;
+    }
