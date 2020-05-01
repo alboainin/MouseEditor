@@ -1,6 +1,5 @@
 #include "log.h"
 
-
 void log_init(FILE* Iptr)
 {
 	if (access("LOG.txt", F_OK) != -1) {
@@ -10,7 +9,7 @@ void log_init(FILE* Iptr)
 	}
 
     log_set_fp(Iptr);
-    
+
 }
 
 void log_close(FILE* Cptr)
