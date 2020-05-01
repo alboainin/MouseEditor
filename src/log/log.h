@@ -5,10 +5,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <time.h>
 
 #include "state.h"
-#include "file.h"
+#include "../file/file.h"
+#include "../vendor/log/log.h"
 
-
-
+void log_init(FILE* Iptr);
+void log_close(FILE* Cptr);
 #endif
