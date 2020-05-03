@@ -1,18 +1,20 @@
 #include "log.h"
 
-void log_init(FILE* Iptr)
+FILE* logPtr;
+
+void log_init()
 {
-	if (access("LOG.txt", F_OK) != -1) {
-		Iptr = fopen("LOG.txt", "a");
+	if (access("log.txt", F_OK) != -1) {
+		logPtr = fopen("log.txt", "a");
 	} else {
-		Iptr = fopen("LOG.txt", "w");
+		logPtr = fopen("log.txt", "w");
 	}
 
-    log_set_fp(Iptr);
+    log_set_fp(logPtr);
 
 }
 
-void log_close(FILE* Cptr)
+void log_terminate()
 {
-    fclose(Cptr);
+    fclose(logPtr);
 }
