@@ -11,6 +11,6 @@
 #include "../file/file.h"
 #include "../vendor/log/log.h"
 
-void log_init(FILE* Iptr);
-void log_close(FILE* Cptr);
+void log_init();
+void log_terminate();
 #endif
