@@ -10,12 +10,9 @@
 
 int main(int argc, char *argv[])
 {
-    //FILE pointer passed to log_init in the begining of the program and to log_close at the end
-    //Betwenn log_init and log_close we can call the log system functions eg: log_debug();
-
-    FILE* filePtr;
-
-    log_init(filePtr);
+    //Betwenn log_init and log_close we can call the log system fu
+	
+    log_init();
 
     log_trace("MouseEditor Initialized");
 
@@ -30,7 +27,7 @@ int main(int argc, char *argv[])
 	 //read_file(state);
 
 
-    log_close(filePtr);
+    log_terminate();
 
 	return 0;
 }
