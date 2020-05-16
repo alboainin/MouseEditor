@@ -11,7 +11,7 @@ void log_init()
 	}
 
     log_set_fp(logPtr);
-    
+
 }
 
 void log_terminate()
