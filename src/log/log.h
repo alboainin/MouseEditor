@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <time.h>
 
-#ifdef _Win32
+#ifdef _WIN32
 #include "../misc/win/win_unistd.h"
 #else
 #include <unistd.h>
