@@ -1,5 +1,6 @@
 #ifndef _FILE_
 #define _FILE_
+
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -11,9 +12,11 @@
 #endif
 
 #include "state.h"
+#include "../vendor/log/log.h"
 
 int get_file_size(struct app_state *state);
 void write_file(struct app_state *state);
 void read_file(struct app_state *state);
-void log_file(FILE *filePtr, char ch);
-#endif /* unistd.h */
+void access_file(FILE *filePtr, char ch);
+
+#endif
