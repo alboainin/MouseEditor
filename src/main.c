@@ -9,23 +9,20 @@
 
 int main(int argc, char *argv[])
 {
-    //Betwenn log_init and log_close we can call the log system fu
-	
-    log_init();
+	// Between log_init and log_close we can call the log system fu
 
-    log_trace("MouseEditor Initialized");
+	log_init();
 
+	log_trace("MouseEditor Initialized");
 
-    //struct app_state *state = malloc(sizeof(struct app_state));
-    //state->argc = argc;
-    //state->argv = argv;
+	struct app_state *state = malloc(sizeof(struct app_state));
+	state->argc = argc;
+	state->argv = argv;
 
-    //printf("Hello, World!\nArgument count: %i", state->argc);
+	printf("Hello, World!\nArgument count: %i", state->argc);
 
-    //write_file(state);
-    //read_file(state);
-    //
-	//generate_time();
+	write_file(state);
+	read_file(state);
 
 	log_terminate();
 
