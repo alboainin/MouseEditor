@@ -22,6 +22,5 @@ file(GLOB_RECURSE mouse_hdrs "src/*.h")
 file(GLOB_RECURSE mouse_srcs "src/*.cpp")
 
 include_directories("src/")
-include_directories("app/")
 
 add_executable(mouse ${mosue_hdrs} ${mouse_srcs})
