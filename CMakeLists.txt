@@ -18,8 +18,8 @@ if (CMAKE_BUILD_TYPE STREQUAL "Release")
     add_definitions(-D__RELEASE__)
 endif (CMAKE_BUILD_TYPE STREQUAL "Release")
 
-file(GLOB_RECURSE mouse_hdrs "src/*.h" "app/*.h")
-file(GLOB_RECURSE mouse_srcs "src/*.c" "app/*.c")
+file(GLOB_RECURSE mouse_hdrs "src/*.h")
+file(GLOB_RECURSE mouse_srcs "src/*.cpp")
 
 include_directories("src/")
 include_directories("app/")
