@@ -24,7 +24,7 @@ $ ./buildRelease.sh
 ```
 
 # Built With
-* [C](http://iso-9899.info/wiki/Main_Page) - Language
+* [C++](https://en.wikipedia.org/wiki/C%2B%2B) - Language
 * [CMake](https://cmake.org) - Build System
 
 # Contributing:
