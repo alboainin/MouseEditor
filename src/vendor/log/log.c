@@ -50,7 +50,7 @@ void log_log(int level, const char *file, int line, char *fmt, ...)
 	// Get time
 	const char *time = get_format_time();
 
-	// Add time to log_final
+	// Add data to log_final
 	log_final = (char *)realloc(
 		log_final, (strlen(log_level) * strlen(time)) * sizeof(char));
 
