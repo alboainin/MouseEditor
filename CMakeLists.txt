@@ -8,7 +8,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
 # Check if compiler name.
-message(${CMAKE_C_COMPILER_ID})
+message(${CMAKE_CXX_COMPILER_ID})
 
 # Set build type definitions.
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
