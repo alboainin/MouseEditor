@@ -1,6 +1,4 @@
-#ifndef CONFIG_H
-#define CONFIG_H
-
+#pragma once
 /* configuration switches for enabling/disabling of features */
 
 #define CONFIG_SWITCH_LOG_ENABLE true
@@ -34,6 +32,4 @@
 #elif !defined(NDEBUG) // if not debug is not defined
 #define CONFIG_LOG_OUTPUT_FILE "logfile.txt"
 #endif
-#endif
-
 #endif
