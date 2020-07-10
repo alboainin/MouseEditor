@@ -6,4 +6,4 @@ struct app_state {
 	int argc;
 	char **argv;
 };
-#endif /* unistd.h */
+#endif

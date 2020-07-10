@@ -25,7 +25,7 @@ add_subdirectory("vendor/spdlog/")
 file(GLOB_RECURSE mouse_hdrs "src/*.h")
 file(GLOB_RECURSE mouse_srcs "src/*.cpp")
 
-include_directories("src/")
-include_directories("vendor/sdplog/include/")
+include_directories("src/"
+					"vendor/spdlog/include/")
 
 add_executable(mouse ${mouse_hdrs} ${mouse_srcs})
