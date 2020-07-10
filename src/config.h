@@ -4,8 +4,8 @@
 /* configuration switches for enabling/disabling of features */
 
 #define CONFIG_SWITCH_LOG_ENABLE true
-#define CONFIG_SWITCH_LOG_STDOUT false
-#define CONFIG_SWITCH_LOG_FILE false
+#define CONFIG_SWITCH_LOG_STDOUT true
+#define CONFIG_SWITCH_LOG_FILE true
 
 /* configuration logic ahead */
 
