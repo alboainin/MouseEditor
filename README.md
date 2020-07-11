@@ -13,8 +13,7 @@ Make sure you got ```GCC```, ```clang```, and ```pre-commit```(pre-commit is a m
 To get a copy of the source code for development:
 ```shell
 $ git clone https://github.com/AliAlboainin96/MouseEditor.git
-$ git submodule init
-$ git submodule init
+$ git submodule update --init --recursive
 $ pre-commit install
 ```
 Compiling code:
