@@ -1,3 +1,4 @@
+#define UNIX_PLATFORM
 #include <stdio.h>
 #include <stdlib.h>
 #include <memory>
@@ -8,6 +9,8 @@
 
 #include "config.h"
 #include "state.h"
+#include "ui/ui.h"
+
 
 int main(int argc, char *argv[])
 {
@@ -31,7 +34,8 @@ int main(int argc, char *argv[])
 	state->argc = argc;
 	state->argv = argv;
 
-	spdlog::info("Hello, World!\nArgument count: {}", state->argc);
-
+	//spdlog::info("Hello, World!\nArgument count: {}", state->argc);
+	ui_run();	
 	return 0;
 }
+

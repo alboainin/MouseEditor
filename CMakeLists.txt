@@ -28,4 +28,8 @@ file(GLOB_RECURSE mouse_srcs "src/*.cpp")
 include_directories("src/"
 					"vendor/spdlog/include/")
 
+find_package(Curses REQUIRED)
+include_directories(${CURSES_INCLUDE_DIR})
+
 add_executable(mouse ${mouse_hdrs} ${mouse_srcs})
+target_link_libraries(mouse ${CURSES_LIBRARIES})
