@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/mouse.dir/src/log/log.cpp.o CMakeFiles/mouse.dir/src/main.cpp.o CMakeFiles/mouse.dir/src/ui/file.cpp.o CMakeFiles/mouse.dir/src/ui/status.cpp.o CMakeFiles/mouse.dir/src/ui/ui.cpp.o  -o bin/mouse  -lcurses /usr/lib/x86_64-linux-gnu/libform.so 

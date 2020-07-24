@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alialboainin96/project/MouseEditor/src/ui/ui.cpp
+ui.h
+/home/alialboainin96/project/MouseEditor/src/ui/ui.h
+iostream
+-
+sys/ioctl.h
+-
+
+/home/alialboainin96/project/MouseEditor/src/ui/ui.h
+iostream
+-
+string
+-
+ncurses.h
+-
+panel.h
+-
+

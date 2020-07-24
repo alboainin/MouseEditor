@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	state->argv = argv;
 
 	//spdlog::info("Hello, World!\nArgument count: {}", state->argc);
-	ui_run();	
+
 	return 0;
 }
 
