@@ -23,7 +23,7 @@ public:
     ~Ui();
     void Run();
 public:
-    //void widget(WINDOW* mainWin, int row, int col, std::string element);
+    void widget(WINDOW* mainWin, int row, int col, std::string element);
         
 private:
     WINDOW* m_Window;
