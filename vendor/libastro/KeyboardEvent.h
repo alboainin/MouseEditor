@@ -84,22 +84,22 @@ namespace astro {
                 // Test Case: if space button pressed it will print "SPACE"
                 if(key == Keys::ENTER)
                 {
-                    printf("ENTER\n");
+//                    printf("ENTER\n");
                 }
                 
                 if(key == Keys::ARROW_UP)
                 {
-                    line--;
-                    MoveLine(line);
+//                    line--;
+//                    MoveLine(line);
 
                 }
                 if(key == Keys::ARROW_DOWN)
                 {
-                    line++;
-                    MoveLine(line);
+//                    line++;
+//                    MoveLine(line);
                 }
  
-            } while(key!='*');
+            } while(key!=Keys::SPACE);
         }   
     } 
 }
