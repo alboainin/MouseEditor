@@ -20,12 +20,15 @@ endif (CMAKE_BUILD_TYPE STREQUAL "Release")
 
 # Add spdlog project
 add_subdirectory("vendor/spdlog/")
-
+add_subdirectory("vendor/libastro/")
 # Add mosue project
 file(GLOB_RECURSE mouse_hdrs "src/*.h")
 file(GLOB_RECURSE mouse_srcs "src/*.cpp")
 
 include_directories("src/"
-					"vendor/spdlog/include/")
+					"vendor/spdlog/include/"
+                    "vendor/libastro/")
 
 add_executable(mouse ${mouse_hdrs} ${mouse_srcs})
+target_link_libraries(mouse Astro)
+

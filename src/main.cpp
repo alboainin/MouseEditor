@@ -9,6 +9,8 @@
 #include "config.h"
 #include "state.h"
 
+#include "libastro.h"
+
 int main(int argc, char *argv[])
 {
 #if CONFIG_SWITCH_LOG_ENABLE
