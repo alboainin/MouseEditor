@@ -9,25 +9,23 @@
 #include "config.h"
 #include "state.h"
 
-#include "libastro.h"
+
+
+#include "term/term.h"
 
 int GraphicalMode() {
-    if(astro::init() != 1)
+    if(init() != 1)
         std::cout << "";
-      //astro::enableRawMode();
-
-    astro::keyboard::captureInput(true);
-
-    astro::Cursor::MoveCursor(CenterPos);
+    
+    //enableRawMode();
 
     //std::cout << astro::Color::REVERSE_VIDEO << "Start" << std::endl;
-
     //astro::Cursor::MoveCursor(LowerPos);
-    std::cout << astro::Color::FG_BLUE_BRIGHT << "MouseEditor\n1.0" <<  astro::Color::FG_DEFAULT << std::endl;
+    
+    std::cout << Color::FG_BLUE_BRIGHT << "MouseEditor\n1.0" <<  Color::FG_DEFAULT << std::endl;
 
-
-    //astro::Draw::Line(1, false);
 }
+
 int main(int argc, char *argv[])
 {
 #if CONFIG_SWITCH_LOG_ENABLE
@@ -53,9 +51,11 @@ int main(int argc, char *argv[])
 	spdlog::info("Hello, World!\nArgument count: {}", state->argc);
 
 //Call GraphicalMode Function
+    
+    unsigned int key = captureInput(false);
     GraphicalMode();
-    astro::Window::CheckResize(&GraphicalMode);
+    CheckResize(&GraphicalMode, key);
 
-    astro::terminate();
+   terminate();
 	return 0;
 }
